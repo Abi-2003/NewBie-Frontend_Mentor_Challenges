@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+body{
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Violet);
+    margin: 10px 25px;
+    color: white;
+    font-family:sans-serif;
+    
+}
+h3{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+p{
+    text-align: center;
+    padding: 10px 35px;
+    line-height: 1.5;
+
+}
+
+button{
+    border: none;
+    padding: 15px 80px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: var(--SoftMagenta);
+    transition: all 0.5s ease-in-out;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+} */
+
+.flex-child{
+    flex: 1;
+    
+}
+.logo{
+    width: 120px;
+}
+
+/* .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.ill{
+    max-width: 600px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 600px){
+    body{
+        margin: 120px auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .flex-child{
+        max-width: 500px;
+    }
+}
