@@ -1,0 +1,240 @@
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500&display=swap');
+:root{
+  --Light_slate_blue: hsl(252, 100%, 67%);
+  --Light_royal_blue: hsl(241, 81%, 54%);
+  --Violet_blue: hsla(256, 72%, 46%, 1);
+  --Persian_blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale_blue: hsl(221, 100%, 96%);
+  --Light_lavender: hsl(241, 100%, 89%);
+  --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+h2{
+    font-size: 50px;
+}
+h4{
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+span{
+    color:dimgrey;
+}
+.para{
+    font-size: 9pt;
+    margin: 0 50px;
+    padding: 0 50px;
+    line-height: 1.5;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(var(--Light_slate_blue),var(--Light_royal_blue));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 310px;
+    color: white;
+}
+
+
+.number{
+    padding: 40px ;
+    background-image: linear-gradient(var(--Violet_blue),var(--Persian_blue));
+    border-radius: 100px;
+    height: 140px;
+    text-align: center;
+    
+}
+.total{
+    color: rgb(218, 211, 211);
+    font-size: 10pt;
+}
+.content{
+    text-align: center;
+    margin-top: 20px ;
+
+    
+}
+
+.marks{
+    padding: 20px;
+    margin: 0 ;
+    box-shadow: 10px 10px 40px var(--Light_lavender);
+    
+}
+.summary{
+    color: var(--Dark_gray_blue);
+}
+.inner{
+    margin: 30px;
+    line-height: 60px;
+    
+}
+.button{
+    padding: 15px 120px;
+    background-color: var(--Dark_gray_blue);
+    border-radius: 50px;
+    border-style: none;
+    margin: 0 60px;
+    color: white;
+    
+    
+}
+button:hover{
+    background-image: linear-gradient(var(--Light_slate_blue),var(--Light_royal_blue));
+    transition: all 0.5s ease-in-out;
+}
+/* .mark{
+    text-align: right;
+    margin-right: 30px;
+     text-indent: 29px; 
+} */
+.r{
+    color:rgb(245, 55, 55);
+    padding-left: 8px;
+}
+.m{
+    color:orange;
+    padding-left: 8px;
+}
+.ve{
+    color:darkcyan;
+    padding-left: 8px;
+}
+
+.vi{
+    color: blue;
+    padding-left: 8px;
+}
+.img-re{
+    display: flex;
+    flex-direction: row;
+
+}
+.img-me{
+    display: flex;
+    flex-direction: row;
+
+}
+.img-ve{
+    display: flex;
+    flex-direction: row;
+
+}
+.img-vi{
+    display: flex;
+    flex-direction: row;
+
+}
+#heading{
+    color: rgb(221, 216, 216);
+    text-align: center;
+    margin: 15px;
+    font-size: 13px;
+}
+#reaction{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 223, 234);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+
+
+#memory{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 248, 200);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
+
+#verbal{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 245, 245);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#visual{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 231, 250);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    
+}
+@media (min-width: 600px) {
+    body{
+        margin: 120px auto;
+        
+        }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-child{
+        max-width: 300px;
+        flex: 1;
+        height: 450px;
+    }
+    #heading{
+        margin: 0;
+    }
+    .para{
+        text-align: center;
+        font-size: 10pt;
+        margin:  0;
+        padding: 0;
+    }
+    .inner{
+        margin: 10px;
+    }
+    .button{
+        padding: 12px 75px;
+        margin: 10px ;
+
+    }
+    .number{
+        margin: 30px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        padding: 50px 50px;
+        
+    }
+    .para{
+        padding: 10px;
+    }
+    .marks{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .summary{
+        padding-bottom: 15px;
+    }
+    
+}
