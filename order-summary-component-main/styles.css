@@ -1,0 +1,132 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 70px 20px;
+    background-color: var(--Pale_blue);
+}
+.container{
+   
+    background-color: white;
+    border-radius: 20px;
+}
+
+.illustration-hero{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 410px;
+    height: 160px;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+}
+.summary-heading{
+    color: var(--Dark_blue);
+    font-weight: 900;
+    padding: 20px 0 15px 0;
+    font-size: 20px;
+}
+.summary-para{
+    text-align: center;
+    margin-top: 0;
+    color: var(--Desaturated_blue);
+    font-weight: 500 ;
+    padding: 0 30px;
+}
+.image-rate{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.plan{
+    margin: 20px;
+    padding:  15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--Very_pale_blue);
+    border-radius: 10px;
+}
+.plan-year{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+.plan-period{
+    color: var(--Dark_blue);
+    font-weight: 900;
+}
+.plan-cost{
+    color: var(--Desaturated_blue);
+}
+
+.blue-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 0 30px ;
+    padding: 15px 100px;
+    background-color: var(--Bright_blue);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 0px 10px 35px -10px var(--Bright_blue);
+   
+
+}
+.cancel-button{
+    padding: 20px;
+    color: var(--Desaturated_blue);
+    font-weight: 900;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.blue-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.cancel-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media(min-width: 600px) {
+    body{
+        margin:  100px 478px;
+    }
+}
+    
+    
